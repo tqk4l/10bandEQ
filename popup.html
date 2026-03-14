@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab Audio Equalizer</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <section class="eq-shell">
+        <div id="bands" class="bands" aria-label="Equalizer bands"></div>
+      </section>
+
+      <section class="volume-row">
+        <label class="volume-control" for="volume">
+          <span>Volume</span>
+          <input id="volume" type="range" min="0" max="2" value="1" step="0.05">
+          <output id="volumeValue">100%</output>
+        </label>
+      </section>
+
+      <div class="actions">
+        <button id="reset" type="button">Reset</button>
+        <p id="status" aria-live="polite">Ready</p>
+        <a id="support" class="support" href="https://ko-fi.com/thequietkid4e" target="_blank" rel="noopener noreferrer">Support</a>
+      </div>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

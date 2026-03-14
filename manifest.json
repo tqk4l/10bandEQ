@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Audio Equalizer",
+  "version": "1.0.0",
+  "description": "A 10-band Chromium tab equalizer with a minimal popup UI.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "homepage_url": "https://ko-fi.com/thequietkid4e",
+  "action": {
+    "default_title": "Audio Equalizer",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
