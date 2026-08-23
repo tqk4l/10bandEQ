@@ -3,7 +3,7 @@
 2. Open `chrome://extensions`
 3. Enable **Developer mode**
 4. Click **Load unpacked**
-5. Select this '10-band EQ' folder
+5. Select the '10-band EQ' folder
 
 ## Notes
 - The equalizer uses 10 peaking filters centered at standard frequencies from 31 Hz to 16 kHz.
